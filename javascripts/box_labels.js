@@ -198,9 +198,7 @@ $("#prevImageButton").click(function(){
 $("#downloadButton").click(function(){
     if (labels.length > 0){
         var d = new Date();
-        var filename = "DATA" + d.getFullYear().toString() + "y" + d.getMonth().toString() + "m" + d.getDate().toString()
-                    + "d" + d.getHours().toString() + "h" + d.getMinutes().toString() + "m" + d.getSeconds().toString()
-                    + "s" + d.getMilliseconds().toString();
+        var filename = 'Dataset'+dataset.toString();
         var labelsString = labels[0];
         for (i = 1; i < labels.length; i++)
             labelsString += "\n\n" + labels[i];
